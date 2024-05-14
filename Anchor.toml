@@ -1,0 +1,19 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+flash_loans = "7dr3UkepCLptxHhpkVpmJr1Xt3habA5Mov8nmfiDQ67z"
+borrower = "ABg9Lfz6k9C1G9THHsaxjgPSr6vt4FywcGXzPgVPLvEm"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "localnet"
+wallet = "/Users/vlad/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p tsconfig.json -t 1000000 tests/**/*.test.ts"
